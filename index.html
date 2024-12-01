@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="en" wp-template wp-template-export-as="index.php" wp-template-define-master-page="true"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <title>New page</title>         
+        <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+    </head>     
+    <body> 
+        <section class="bg-yellow-50 px-4 py-4 md:px-8 lg:px-16" data-pg-name="Instructions" cms-no-export>
+            <div>
+                <h2>Quick Start Guide</h2>
+                <div class="bg-blue-100 border-blue-500 border-l-4 flex items-center mb-6 not-prose p-4 rounded-r space-x-3" role="alert">
+                    <div>
+                        <p class="font-sans text-base text-blue-700">Memorize the instructions, then destroy this section&nbsp;&#128522;</p>
+                    </div>
+                </div>
+                <div>
+                    <p>This is a quick start template for a WordPress block theme with Tailwind CSS.</p>
+                    <p>Steps you need to do:</p>
+                    <ul>
+                        <li>Change the theme info in <b>Theme settings</b><span>, including Block category for custom blocks.</span>
+                        </li>
+                        <li>If you are going to use the AI Assistant, create the <b>project brief</b> in the AI panel.
+                        </li>
+                        <li>Create a <code>section</code> (or <code>nav</code>, <code>header</code>, <code>footer</code>) for every template section and content block. Use <b>Block</b> action to turn the section into a block.
+                        </li>
+                    </ul>
+                    <p>About the styling:</p>
+                    <ul>
+                        <li>
+                            <b>Body</b>&nbsp;style adds class <code>prose</code> so that prose is added both to the front-end and to the WP Block editor.
+                        </li>
+                        <li>Most sections should have <code>not-prose</code> class so that prose styling is disabled within that section.
+                        </li>
+                        <li>Sections that display post content should not have the <code>non-prose</code> class. Instead <code>non-prose</code> can be added on their sub-elements that do not display post content.
+                        </li>
+                        <li>Add class <code>active</code> to the first item of the nav menu. Customize the style in Style manager.
+                        </li>
+                        <li>
+                            <b>nav</b> style with <code>wp-has-admin-bar</code> variant moves the top nav bar below the WordPress admin bar, if it is shown.
+                        </li>
+                        <li>
+                            <b>pre</b> style is an example of how to style elements in the WP Block editor.
+                        </li>
+                        <li>
+                            <code>additional-editor-styles.css</code> contains CSS styling for the <code>body</code> that is applied only in the WP block editor.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <nav class="not-prose" data-empty-placeholder></nav>
+        <header class="not-prose" data-empty-placeholder></header>
+        <section class="not-prose" data-empty-placeholder></section>
+        <section class="not-prose" data-pg-name="Section with post content">
+            <div class="not-prose">Post header without prose</div>
+            <div>Post content with prose</div>
+        </section>
+        <footer class="not-prose" data-empty-placeholder></footer>
+    </body>     
+</html>
